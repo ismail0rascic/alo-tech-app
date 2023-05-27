@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
       "&.Mui-focused .MuiOutlinedInput-input": {
         color: theme.palette.lightTitle,
       },
+      [theme.breakpoints.down("md")]: {
+        height:"4vh"
+      },
     },
   },
   searchButton: {
@@ -32,9 +35,14 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       border: "1px solid black",
     },
+    [theme.breakpoints.down("md")]: {
+      height:"5vh",
+      width:"5vh"
+    },
   },
   searchButtonIcon: {
     color: theme.palette.lightBackground,
+    
   },
 
   searchError: {

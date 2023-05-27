@@ -6,7 +6,7 @@ const Songs = () => {
   const { columns, data, tableStyles } = useSongs();
 
   return (
-    <Container>
+    <Container >
       <Table data={data} columns={columns} styles={tableStyles} />
     </Container>
   );

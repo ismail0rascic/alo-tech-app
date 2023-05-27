@@ -13,5 +13,5 @@ export const getSongs = (inputRef, dispatch, setLoading) => {
     dispatch({ type: "ERROR", payload: err });
   };
 
-  get("/api/tracks", inputRef.current.value, successCallback, errorCallback);
+  get("/api/tracks", inputRef.current.value.toLowerCase().trim(), successCallback, errorCallback);
 };

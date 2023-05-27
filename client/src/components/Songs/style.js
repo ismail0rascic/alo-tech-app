@@ -1,14 +1,12 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+ 
   table: {
     background: theme.palette.lightBackground,
-
   },
   tableHeader: {
     background: theme.palette.lightBackground,
-    
-
   },
   tableHeaderFont: {
     textTransform: "uppercase",
@@ -21,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.lightTitle,
   },
   tableRow: {
-
     borderTop: `3px solid ${theme.palette.lightTitle}`,
   },
 }));
